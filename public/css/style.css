@@ -1,0 +1,155 @@
+/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
+
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+:root {
+    --blue: #3490dc;
+    --indigo: #6574cd;
+    --purple: #9561e2;
+    --pink: #f66D9b;
+    --red: #e3342f;
+    --orange: #f6993f;
+    --yellow: #ffed4a;
+    --green: #38c172;
+    --teal: #4dc0b5;
+    --cyan: #6cb2eb;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #3490dc;
+    --secondary: #6c757d;
+    --success: #38c172;
+    --info: #6cb2eb;
+    --warning: #ffed4a;
+    --danger: #e3342f;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Nunito", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #7ab8f7;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #4e5eb6;
+    outline: none;
+    text-decoration: none;
+}
+
+
+/* CSS FOR INCLUDES/HEADER.......................................................................................... */
+.header{
+    padding-top: 10px ;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+    transition: all 0.5s;
+    z-index: 7;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+    margin-left: 60%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -10%;
+}
+.nav-items{
+    padding-left: 60px;
+    text-decoration: none;
+}
+.image-container img{
+    width: 10em;
+    height: auto;
+    margin: 0;
+}
+
+/* CSS FOR INCLUDES/HEADER.......................................................................................... */
+
+
+
+/* START CSS FOR THE POST/POSTINDEX */
+
+.postform{
+    /* border: #212529 solid; */
+    width: 40%;
+    height: auto;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 80px;
+    background-color: #cfbc93;
+    border-radius: 20px;
+}
+.form-group input{
+    border: 2px solid #000; /* Solid black border................................................................................. */
+
+}
+/* Style for select element */
+div select {
+    width: 310px;          /* Increase width */
+    height: 45px;          /* Increase height */
+    padding: 5px;
+    font-size: 18px;
+    /* border: 20px solid #000;
+    border-radius: 5px; */
+}
+textarea{
+    width: 500%;          /* Increase width */
+    height: 60vh;          /* Increase height */
+    padding: 5px;
+    font-size: 18px;
+    border: 2px solid #000; /* Solid black border */
+    border-radius: 5px;
+}
