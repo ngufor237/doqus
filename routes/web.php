@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 // post views and controllers
 Route::get('/post', [Postcontroller::class,'index']);
+
+Route::post('/createpost', [Postcontroller::class,'createpost'])->name('createpost');
+

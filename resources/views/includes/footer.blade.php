@@ -52,4 +52,12 @@
         toggleBtn.textContent = sidebar.classList.contains('collapsed') ? 'Expand' : 'Collapse';
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('#document').select2({
+            placeholder: 'Select document',
+            allowClear: true
+        });
+    });
+</script>
 </html>
