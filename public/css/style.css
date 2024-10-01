@@ -11,7 +11,7 @@
     --blue: #3490dc;
     --indigo: #6574cd;
     --purple: #9561e2;
-    --pink: #f66D9b;
+    --pink: #f66d9b;
     --red: #e3342f;
     --orange: #f6993f;
     --yellow: #ffed4a;
@@ -35,15 +35,17 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: "Nunito", sans-serif;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 article,
 aside,
@@ -62,6 +64,12 @@ body {
     background: #fff;
     color: #666666;
     font-family: "Open Sans", sans-serif;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 a {
@@ -77,40 +85,39 @@ a:focus {
     text-decoration: none;
 }
 
-
 /* CSS FOR INCLUDES/HEADER.......................................................................................... */
-.header{
-    padding-top: 10px ;
+.header {
+    padding-top: 10px;
     position: relative;
     left: 0;
     top: 0;
     right: 0;
-    
+
     transition: all 0.5s;
     z-index: 7;
 }
-.navbar-nav{
+.navbar-nav {
     display: flex;
     flex-direction: row;
     -ms-flex-direction: row;
     padding-left: 0;
     list-style: none;
     margin-left: 60%;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 20px;
 }
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin-top: -10%;
 }
-.nav-items{
+.nav-items {
     padding-left: 60px;
     text-decoration: none;
 }
-.image-container img{
+.image-container img {
     width: 10em;
     height: auto;
     margin: 0;
@@ -118,11 +125,9 @@ a:focus {
 
 /* CSS FOR INCLUDES/HEADER.......................................................................................... */
 
-
-
 /* START CSS FOR THE POST/POSTINDEX */
 
-.postform{
+.postform {
     /* border: #212529 solid; */
     width: 40%;
     height: auto;
@@ -132,22 +137,21 @@ a:focus {
     background-color: #cfbc93;
     border-radius: 20px;
 }
-.form-group input{
+.form-group input {
     border: 2px solid #000; /* Solid black border................................................................................. */
-
 }
 /* Style for select element */
 div select {
-    width: 310px;          /* Increase width */
-    height: 45px;          /* Increase height */
+    width: 310px; /* Increase width */
+    height: 45px; /* Increase height */
     padding: 5px;
     font-size: 18px;
     /* border: 20px solid #000;
     border-radius: 5px; */
 }
-textarea{
-    width: 500%;          /* Increase width */
-    height: 60vh;          /* Increase height */
+textarea {
+    width: 500%; /* Increase width */
+    height: 60vh; /* Increase height */
     padding: 5px;
     font-size: 18px;
     border: 2px solid #000; /* Solid black border */

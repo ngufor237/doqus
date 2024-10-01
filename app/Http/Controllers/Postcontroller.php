@@ -10,14 +10,21 @@ class Postcontroller extends Controller
 {
     //
     function home(){
-        $post=Post::all();
-        // dd($post);
-      return view('index',compact('post'));
+        $post=Post::orderBy('created_at', 'desc')
+            ->limit(1)
+            ->get(); 
+        $title=Post::all();
+      return view('index',compact('post','title'));
     }
+
     function index(){
           $post=Post::all();
-        return view('post.postindex',compact('post'));
+          $posts=Post::orderBy('created_at', 'desc')
+          ->limit(1)
+          ->get(); 
+        return view('post.postindex',compact('post','posts'));
     }
+
     public function createpost(Request $request){
         $request->validate([
             'title' => 'required',
@@ -31,7 +38,7 @@ class Postcontroller extends Controller
         $post->content=$request->description;
         $res=$post->save();
 
-        return view('index');
+        return redirect('/home');
         
     }
 
