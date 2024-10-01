@@ -9,6 +9,11 @@ use App\Models\Post;
 class Postcontroller extends Controller
 {
     //
+    function home(){
+        $post=Post::all();
+        // dd($post);
+      return view('index',compact('post'));
+    }
     function index(){
           $post=Post::all();
         return view('post.postindex',compact('post'));
@@ -25,9 +30,8 @@ class Postcontroller extends Controller
         $post->title=$request->title;
         $post->content=$request->description;
         $res=$post->save();
-        $post=Post::all();
 
-        return view('index',compact('post'));
+        return view('index');
         
     }
 

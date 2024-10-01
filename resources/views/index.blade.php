@@ -8,11 +8,7 @@
             <div class="col-md-8">
                 asgcdjh,,,,,,,,,,,,,,,,,,,,,,,,,,,,ABABABABABABABABABABABABABABABABABefgcccccccccccaq
                 @foreach($post as $post)
-                @php
-                $string = $post->content;
-                     $d= trim($string, '"');
-                @endphp
-                {{$d}}
+                   {{$post->title}}
                 @endforeach
             </div>
             <div class="col-md-2">

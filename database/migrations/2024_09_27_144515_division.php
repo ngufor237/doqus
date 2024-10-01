@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('region_id')->constrained('region')->cascadeOnDelete();
             $table->string('name');
+            $table->timestamps();
+
         });
         
     }

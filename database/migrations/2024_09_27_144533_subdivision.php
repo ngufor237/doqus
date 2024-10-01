@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('division_id')->constrained('division')->cascadeOnDelete();
             $table->string('name');
+            $table->timestamps();
+
         });
         
     }
